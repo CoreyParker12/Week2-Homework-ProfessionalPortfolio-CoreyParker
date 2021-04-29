@@ -1,0 +1,95 @@
+header {
+    background-color: #b8b8b8;
+    padding: 25px;
+    overflow: hidden;
+}
+
+div.navbar {
+    display: flex;
+    float: right;
+}
+
+a.navbar-style {
+    font-family: "Open Sans";
+    padding: 50px 0px 0px 80px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a.navbar-style:hover {
+    color: #000131;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ABOUT ME */
+
+.flex-it {
+    display: flex;
+
+}
+
+.sidebar-left {
+    display: flex;
+    min-width: 220px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 0 0;
+    background-color: #b8b8b8;
+    align-items: center;
+}
+
+.sidebar-styling {
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: bold;
+    color: #000131;
+}
+
+.regular-content {
+    flex: 80%;
+    margin: 20px 20px 0 0;
+    font-family: "Open Sans";
+
+}
+
+.portfolio {
+    display: flex;
+    flex: 80%;
+    margin: 20px 20px 0 0;
+    font-family: "Open Sans";
+
+
+}
+
+img.image-styling {
+   border-radius: 15px;
+   border-color: rgb(172, 0, 0);
+   border-width: 20px;
+   width: 100%;
+   position: relative;
+
+}
+
+.portfolio-text-style {
+    display: flex;
+    align-items: center;
+    background: #6e6e6e;
+    position: relative;
+    bottom: 50px;
+    height: 20%;
+    border-radius: 0 0 15px 15px;
+    padding: 0 0 0 20px;
+}
+
+.portfolio-text-style a {
+    font-family: "Open Sans";
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.portfolio-text-style a:hover {
+    color: #000131;
+    font-weight: bold;
+}
