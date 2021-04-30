@@ -3,10 +3,19 @@
 
 
 
-
 body {
     font-family: "Open Sans";
+}
 
+#header-bkgnd {
+    width: 100%;
+    height: 200px;
+    background-color: #6e6e6e;
+}
+
+#content-width {
+    width: 75%;
+    margin: auto;
 }
 
 
@@ -18,9 +27,8 @@ body {
 /* Pushes content away from the page border */
 
 header {
-    background-color: #6e6e6e;
     padding: 25px;
-    overflow: hidden;
+
 }
 
 /* Pushes navbar to right and lines it with logo */
@@ -54,7 +62,7 @@ a.navbar-style:hover {
 .test {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-between;
 }
 
 /* Sets up left sidebar container */
@@ -79,8 +87,9 @@ a.navbar-style:hover {
 
 .regular-content {
     flex: 80%;
-    margin: 20px 20px 0 0;
+    margin: 20px 20px 20px 0 ;
     font-size: 20px;
+    line-height: 200%;
 
 }
 
@@ -88,20 +97,18 @@ a.navbar-style:hover {
     margin: 20px 20px 20px 20px;
 }
 
-img.image-styling {
-   width: 100%;
-   height: 90%;
-   position: relative;
-   border-style: solid;
-   border-width: 10px 10px 50px 10px;
-   border-color: #6e6e6e;
-
-}
 
 .box-hover:hover {
     opacity: 70%;
  }
 
+img.image-styling {
+   width: 100%;
+   border-style: solid;
+   border-width: 12px 12px 50px 12px;
+   border-color: #6e6e6e;
+
+}
 
 .portfolio-text-style {
     display: flex;
