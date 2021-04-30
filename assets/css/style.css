@@ -236,3 +236,23 @@ img.image-styling {
          font-size: 18px;
      }
 }
+
+@media screen and (max-width: 600px) {
+
+    #header-back {
+        height: 250px;
+    }
+
+    header {
+        height: 225px;
+    }
+
+    #logo {
+        width: 80%;
+    }
+
+    a.navbar-style {
+        font-size: 12px;
+    }
+
+}
