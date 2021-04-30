@@ -1,16 +1,38 @@
+
+/* Sets font family for page */
+
+
+
+
+body {
+    font-family: "Open Sans";
+
+}
+
+
+
+/**************************** HEADER **********************/
+
+
+/* Sets the header background */
+/* Pushes content away from the page border */
+
 header {
-    background-color: #b8b8b8;
+    background-color: #6e6e6e;
     padding: 25px;
     overflow: hidden;
 }
+
+/* Pushes navbar to right and lines it with logo */
 
 div.navbar {
     display: flex;
     float: right;
 }
 
+/* Navbar styling and hover */
+
 a.navbar-style {
-    font-family: "Open Sans";
     padding: 50px 0px 0px 80px;
     color: #ffffff;
     font-size: 20px;
@@ -23,24 +45,33 @@ a.navbar-style:hover {
     text-decoration: none;
 }
 
-/* ABOUT ME */
+/**************************** ABOUT ME **********************/
 
 .flex-it {
     display: flex;
-
 }
+
+.test {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/* Sets up left sidebar container */
 
 .sidebar-left {
     display: flex;
     min-width: 220px;
     padding: 20px 20px 20px 20px;
-    margin: 20px 20px 0 0;
-    background-color: #b8b8b8;
+    margin: 20px 20px 20px 0;
+    background-color: #6e6e6e;
     align-items: center;
 }
 
+
+/* Sidebar font styling */
+
 .sidebar-styling {
-    font-family: "Open Sans";
     font-size: 30px;
     font-weight: bold;
     color: #000131;
@@ -49,47 +80,44 @@ a.navbar-style:hover {
 .regular-content {
     flex: 80%;
     margin: 20px 20px 0 0;
-    font-family: "Open Sans";
+    font-size: 20px;
 
 }
 
 .portfolio {
-    display: flex;
-    flex: 80%;
-    margin: 20px 20px 0 0;
-    font-family: "Open Sans";
-
-
+    margin: 20px 20px 20px 20px;
 }
 
 img.image-styling {
-   border-radius: 15px;
-   border-color: rgb(172, 0, 0);
-   border-width: 20px;
    width: 100%;
+   height: 90%;
    position: relative;
+   border-style: solid;
+   border-width: 10px 10px 50px 10px;
+   border-color: #6e6e6e;
 
 }
+
+.box-hover:hover {
+    opacity: 70%;
+ }
+
 
 .portfolio-text-style {
     display: flex;
     align-items: center;
-    background: #6e6e6e;
     position: relative;
-    bottom: 50px;
-    height: 20%;
-    border-radius: 0 0 15px 15px;
-    padding: 0 0 0 20px;
+    bottom: 40px;
+    padding: 0 0 0 10px;
 }
 
-.portfolio-text-style a {
-    font-family: "Open Sans";
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-}
 
-.portfolio-text-style a:hover {
+.portfolio-text-style p {
+    font-size: 25px;
     color: #000131;
     font-weight: bold;
+}
+
+.portfolio a:link {
+    text-decoration: none;
 }
