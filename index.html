@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+<!-- HEAD -->
+<!-- For Metadata -->
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <title>Corey Parker Design</title>
     <meta name="Welcome to Corey Parker Design!">
   </head>
 
+        <!-- HEADER -->
+        <!-- Establishes the logo and navbar-->
+
     <body>
-        <div id="header-bkgnd">
+        <div id="header-back">
             <div id="content-width">
                 <header>
-                    <img class="logo" src="./assets/logo.png" alt="Logo for Corey Parker Design"/>
+                    <img id="logo" src="./assets/images/logo.png" alt="Logo for Corey Parker Design"/>
                     <div class="navbar">
-                        <a class="navbar-style" href="https://google.com"> Contact Me </a>
-                        <a class="navbar-style" href="https://google.com"> Help </a>
-                        <a class="navbar-style" href="https://google.com"> Design </a>
+                        <a class="navbar-style" href="#about-me"> About Me </a>
+                        <a class="navbar-style" href="#my-work"> My Work </a>
+                        <a class="navbar-style" href="#contact-me"> Contact Me </a>
                     </div>
                 </header>
-                
-                <!-- ABOUT ME SECTION-->
+
+                    <!-- MAIN CONTENT -->                
+                    <!-- About Me Section -->
                 
                 <section class="flex-it">
                     <aside class="sidebar-left">
-                        <div class="sidebar-styling">
+                        <div id="about-me" class="sidebar-styling">
                             ABOUT ME
                         </div>
                     </aside>    
                     <div class="regular-content">
                         <p>
-                            My name is Corey Parker. This is a portfolio page with information about me. Please click the links at the top of this page if you would like to be directed around the webite. 
-                            
-                            I'm an electrical engineer in Atlanta, GA. I enjoy spending my time with friends.
-                        
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            My name is Corey Parker. This is a portfolio page with information about me. Please click the links at the top of this page if you would like to be directed around the webite.
+                            I'm an electrical engineer in Atlanta, GA. 
+                            I enjoy spending my time with friends, going to the lake, and playing video games.
                         </P>
                     </div>
                 </section>
         
-                <!-- MY WORK SECTION-->
+                    <!-- My Work Section -->
         
                 <section class="flex-it">
                     
-                        <aside class="sidebar-left">
-                            <div class="sidebar-styling">
-                                MY WORK
-                            </div>
-                        </aside>
+                    <aside class="sidebar-left">
+                        <div id="my-work" class="sidebar-styling">
+                            MY WORK
+                        </div>
+                    </aside>
         
-                    
-                    <main class="test">   
+                    <main id="portfolio-wrapper">   
                         <div class="portfolio">
                             <a class="box-hover" href="http://stinkybass.com/">
-                                <img src="./assets/Stinky-Bass.png" class="image-styling" alt="Stinky Bass home page."/>
+                                <img src="./assets/images/Stinky-Bass.PNG" class="image-styling" alt="Link to the Stinky Bass home page."/>
                                 <div class="portfolio-text-style">
                                     <p>
-                                    STINKY BASS
+                                        STINKY BASS
                                     </p>
                                 </div>
                             </a>
@@ -69,18 +71,7 @@
         
                         <div class="portfolio">
                             <a class="box-hover" href="https://coreyparker12.github.io/Week1-Homework-CodeRefactor-CoreyParker/">
-                             <img src="./assets/Horiseon.jpg" class="image-styling" alt="Horiseon's SEO home page."/>
-                                <div class="portfolio-text-style">
-                                    <p>
-                                    HORISEON'S SEO
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-        
-                        <div class="portfolio">
-                            <a class="box-hover" href="https://coreyparker12.github.io/Week1-Homework-CodeRefactor-CoreyParker/">
-                                <img src="./assets/Horiseon.jpg" class="image-styling" alt="Horiseon's SEO home page."/>
+                             <img src="./assets/images/Horiseon.jpg" class="image-styling" alt="Link to Horiseon's SEO home page."/>
                                 <div class="portfolio-text-style">
                                     <p>
                                         HORISEON'S SEO
@@ -90,48 +81,58 @@
                         </div>
         
                         <div class="portfolio">
-                            <a class="box-hover" href="https://coreyparker12.github.io/Week1-Homework-CodeRefactor-CoreyParker/">
-                                <img src="./assets/Lego-logo.png" class="image-styling" alt="Lego website."/>
+                            <a class="box-hover" href="https://www.pokemon.com/us/">
+                                <img src="./assets/images/pokemon-logo.jpg" class="image-styling" alt="Link to the Pokemon home page."/>
                                 <div class="portfolio-text-style">
                                     <p>
-                                        HORISEON'S SEO
+                                        POKEMON
                                     </p>
                                 </div>
                             </a>
                         </div>
         
                         <div class="portfolio">
-                            <a class="box-hover" href="https://coreyparker12.github.io/Week1-Homework-CodeRefactor-CoreyParker/">
-                                <img src="./assets/Lego-logo.png" class="image-styling" alt="Lego website."/>
+                            <a class="box-hover" href="https://www.lego.com/en-us">
+                                <img src="./assets/images/lego-logo.JPG" class="image-styling" alt="Link to the Lego home page."/>
                                 <div class="portfolio-text-style">
                                     <p>
-                                        HORISEON'S SEO
+                                        LEGO
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+        
+                        <div class="portfolio">
+                            <a class="box-hover" href="https://www.minecraft.net/en-us/">
+                                <img src="./assets/images/minecraft-logo.jpg" class="image-styling" alt="Link to the minecraft home page."/>
+                                <div class="portfolio-text-style">
+                                    <p>
+                                        MINECRAFT
                                     </p>
                                 </div>
                             </a>
                         </div>
         
                     </main>
+
                 </section>
         
-                <!-- CONTACT SECTION-->
+                    <!-- Contact Section-->
         
                 <section class="flex-it">
                     <aside class="sidebar-left">
-                        <div class="sidebar-styling">
+                        <div id="contact-me" class="sidebar-styling">
                             CONTACT
                         </div>
                     </aside>    
                     <div class="regular-content">
                         <p>
-                            My name is Corey Parker. This is a portfolio page with information about me. Please click the links at the top of this page if you would like to be directed around the webite. 
-                            Here is some additional text to help fill the space. I'm note sure what to type here for now.
+                            You can reach me at coreyparker012@gmail.com
                         </P>
                     </div>
                 </section>
             </div>
         </div>
-
     </body>
 </html>
 

@@ -1,18 +1,24 @@
+/***************************************************/
+/******************* PAGE SETUP ********************/
+/***************************************************/
 
 /* Sets font family for page */
-
-
 
 body {
     font-family: "Open Sans";
     background-color: #e2e2e2;
 }
 
-#header-bkgnd {
+/* Sets header height and color */
+/* Stretches past the #content-width */
+
+#header-back {
     width: 100%;
     height: 200px;
     background-color: #6e6e6e;
 }
+
+/* Pulls content in to center of page */
 
 #content-width {
     width: 90%;
@@ -20,9 +26,9 @@ body {
 }
 
 
-
-/**************************** HEADER **********************/
-
+/**************************************************/
+/********************* HEADER *********************/
+/**************************************************/
 
 /* Sets the header background */
 /* Pushes content away from the page border */
@@ -43,24 +49,26 @@ div.navbar {
 
 a.navbar-style {
     padding: 60px 0px 0px 80px;
-    color: #ffffff;
     font-size: 20px;
     text-decoration: none;
+    color: #ffffff;
 }
 
 a.navbar-style:hover {
-    color: #000131;
     font-weight: bold;
     text-decoration: none;
+    color: #000131;
 }
 
-/**************************** ABOUT ME **********************/
+/***************************************************/
+/********************* CONTENT *********************/
+/***************************************************/
 
 .flex-it {
     display: flex;
 }
 
-.test {
+#portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -70,13 +78,12 @@ a.navbar-style:hover {
 
 .sidebar-left {
     display: flex;
+    align-items: center;
     min-width: 220px;
     padding: 20px 20px 20px 20px;
     margin: 20px 20px 20px 0;
     border-right: solid 5px;
-    align-items: center;
 }
-
 
 /* Sidebar font styling */
 
@@ -86,30 +93,37 @@ a.navbar-style:hover {
     color: #000131;
 }
 
+/* Regular text styling */
+
 .regular-content {
     flex: 80%;
     margin: 20px 20px 20px 20px ;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 200%;
-
 }
+
+/* Moves portfolio area away from edges */
 
 .portfolio {
     margin: 20px 20px 20px 20px;
 }
 
+/*Transparent hover over portfolio images */
 
 .box-hover:hover {
     opacity: 70%;
- }
+}
+
+/* Image border styling */
 
 img.image-styling {
    width: 100%;
    border-style: solid;
    border-width: 12px 12px 50px 12px;
    border-color: #6e6e6e;
-
 }
+
+/* Image text styling */
 
 .portfolio-text-style {
     display: flex;
@@ -119,28 +133,35 @@ img.image-styling {
     padding: 0 0 0 10px;
 }
 
-
 .portfolio-text-style p {
     font-size: 25px;
     color: #000131;
     font-weight: bold;
 }
 
+/* Removing underline from link */
+
 .portfolio a:link {
     text-decoration: none;
 }
 
 
+/***************************************************/
+/********************* RESPONSIVE ******************/
+/***************************************************/
+
+/**************** RESPONSIVE 1300px ****************/
+
 @media screen and (max-width: 1300px) {
-    
-    body {
-        background-color: rgba(37, 0, 202, 0.377);
-    }
+
+    /* Giving content more room */
 
     #content-width {
         width: 96%;
         margin: auto;
     }
+
+    /* Thinning out sidebar */
 
     .sidebar-left {
         min-width: 120px;
@@ -152,24 +173,23 @@ img.image-styling {
         font-size: 18px;
     }
 
+    /* Sizing doen content */
+
     .regular-content {
         flex: 80%;
         margin: 20px 20px 20px 20px ;
         font-size: 14px;
         line-height: 150%;
-    
-    }
-      
-
+    }   
 }
 
-@media screen and (max-width: 900px) {
-    
-    body {
-        background-color: rgb(173, 252, 255);
-    }
+/**************** RESPONSIVE 900px ****************/
 
-    #header-bkgnd {
+@media screen and (max-width: 900px) {
+
+    /* Adjusting header height */
+
+    #header-back {
         width: 100%;
         height: 225px;
         background-color: #6e6e6e;
@@ -178,19 +198,21 @@ img.image-styling {
     header {
         padding: 25px 0 0 0;
         height: 200px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    .logo {
+    /* Centering logo */
+
+    #logo {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
+    /* Styling navbar to sit center under logo */
+
     div.navbar {
-    width: 100%;
-    justify-content: center;
+        width: 100%;
+        justify-content: center;
     }
 
     a.navbar-style {
@@ -198,6 +220,19 @@ img.image-styling {
         font-size: 16px;
     }
 
+    /* Portfolio area image styling */
 
-
+    img.image-styling {
+        border-width: 8px 8px 50px 8px;
+        height: auto;
+     }
+     
+     .portfolio-text-style {
+         bottom: 40px;
+         padding: 0 0 0 10px;
+     }
+     
+     .portfolio-text-style p {
+         font-size: 18px;
+     }
 }
